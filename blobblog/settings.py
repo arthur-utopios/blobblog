@@ -27,8 +27,9 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'f345ede4-5958-4d90-b898-4bb5349e2c2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['blobblog-production.up.railway.app', '127.0.0.1']
 
+CSRF_TRUSTED_ORIGINS = ['https://blobblog-production.up.railway.app']
 
 # Application definition
 
